@@ -5,7 +5,7 @@ using System.Text;
 using System.Windows;
 using System.Windows.Threading;
 
-namespace UnityTrainDownloader
+namespace UnityTrainDownloader.Utils
 {
     public static class ExtensionClass
     {

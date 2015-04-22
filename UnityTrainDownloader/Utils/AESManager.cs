@@ -2,7 +2,7 @@
 using System.Security.Cryptography;
 using System.Text;
 
-namespace UnityTrainDownloader
+namespace UnityTrainDownloader.Utils
 {
     public static class AESManager
     {
@@ -42,12 +42,12 @@ namespace UnityTrainDownloader
         /// <returns></returns>
         public static byte[] AESDecrypt(byte[] inputdata, byte[] iv, string strKey)
         {
+            byte[] decryptBytes = new byte[inputdata.Length];
             SymmetricAlgorithm des = Rijndael.Create();
             des.Key = Encoding.UTF8.GetBytes(strKey);
             des.IV = iv;
             des.Padding = PaddingMode.None;
 
-            byte[] decryptBytes = new byte[inputdata.Length];
             using (MemoryStream ms = new MemoryStream(inputdata))
             {
                 using (CryptoStream cs = new CryptoStream(ms, des.CreateDecryptor(), CryptoStreamMode.Read))
@@ -57,6 +57,7 @@ namespace UnityTrainDownloader
                     ms.Close();
                 }
             }
+
             return decryptBytes;
         }
     }

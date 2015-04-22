@@ -5,6 +5,7 @@ using System.Data;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
+using Microsoft.Practices.Prism.Events;
 
 namespace UnityTrainDownloader
 {
@@ -13,5 +14,10 @@ namespace UnityTrainDownloader
     /// </summary>
     public partial class App : Application
     {
+        public static IEventAggregator EventAggregator { get; set; }
+        static App()
+        {
+            EventAggregator = new EventAggregator();
+        }
     }
 }
