@@ -9,6 +9,13 @@ namespace UnityTrainDownloader.ViewModels
 {
     public class LoginViewModel : ViewModelBase
     {
+        #region 字段
+        /// <summary>
+        /// 登录辅助类
+        /// </summary>
+        private WebUtil weber;
+        #endregion
+
         #region 属性
         private string _Username;
         /// <summary>
@@ -85,13 +92,16 @@ namespace UnityTrainDownloader.ViewModels
             Password = "";
             LoginState = "未登录";
             IsLogin = false;
+
+            //实例化时预登录，保证登录时一次成功
+            weber = new WebUtil();
+            weber.Login(Username, Password);
         }
 
         private void Login()
         {
             if (!IsLogin)
             {
-                WebUtil weber = new WebUtil();
                 weber.Login(Username, Password);
                 weber.LoginSuccessed += weber_LoginSuccessed;
             }
@@ -99,7 +109,7 @@ namespace UnityTrainDownloader.ViewModels
                 MessageBox.Show("用户已登录！");
         }
 
-        void weber_LoginSuccessed(object sender, EventArgs e)
+        private void weber_LoginSuccessed(object sender, EventArgs e)
         {
             IsLogin = true;
             Cookie = sender as string;
