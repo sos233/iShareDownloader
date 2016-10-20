@@ -5,7 +5,7 @@ using System.Text;
 using Microsoft.Practices.Prism.Events;
 using Microsoft.Practices.Prism.ViewModel;
 
-namespace UnityTrainDownloader.ViewModels
+namespace iShareDownloader.ViewModels
 {
     /// <summary>
     /// ViewModel基类

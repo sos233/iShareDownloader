@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using System.Windows;
 using Microsoft.Practices.Prism.Events;
 
-namespace UnityTrainDownloader
+namespace iShareDownloader
 {
     /// <summary>
     /// Interaction logic for App.xaml

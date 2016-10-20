@@ -6,7 +6,7 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Reflection;
 
-namespace UnityTrainDownloader.Utils
+namespace iShareDownloader.Utils
 {
     /// <summary>
     /// PasswordBox中Password绑定帮助类

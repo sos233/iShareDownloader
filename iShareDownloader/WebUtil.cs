@@ -7,9 +7,9 @@ using System.Net;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
-using UnityTrainDownloader.Utils;
+using iShareDownloader.Utils;
 
-namespace UnityTrainDownloader
+namespace iShareDownloader
 {
     public class WebUtil
     {

@@ -5,7 +5,7 @@ using System.Text;
 using System.Windows;
 using Microsoft.Practices.Prism.Commands;
 
-namespace UnityTrainDownloader.ViewModels
+namespace iShareDownloader.ViewModels
 {
     public class LoginViewModel : ViewModelBase
     {

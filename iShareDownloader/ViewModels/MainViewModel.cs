@@ -7,7 +7,7 @@ using System.Windows.Forms;
 using System.Windows.Threading;
 using Microsoft.Practices.Prism.Commands;
 
-namespace UnityTrainDownloader.ViewModels
+namespace iShareDownloader.ViewModels
 {
     public class MainViewModel : ViewModelBase
     {

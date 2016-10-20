@@ -2,7 +2,7 @@
 using System.Security.Cryptography;
 using System.Text;
 
-namespace UnityTrainDownloader.Utils
+namespace iShareDownloader.Utils
 {
     public static class AESManager
     {

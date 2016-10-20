@@ -1,9 +1,9 @@
-﻿<Window x:Class="UnityTrainDownloader.MainWindow"
+﻿<Window x:Class="iShareDownloader.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:ViewModels="clr-namespace:UnityTrainDownloader.ViewModels"
-        xmlns:Utils="clr-namespace:UnityTrainDownloader.Utils"
-        xmlns:Converters="clr-namespace:UnityTrainDownloader.Converts"
+        xmlns:ViewModels="clr-namespace:iShareDownloader.ViewModels"
+        xmlns:Utils="clr-namespace:iShareDownloader.Utils"
+        xmlns:Converters="clr-namespace:iShareDownloader.Converts"
         Title="UnityTrain课程下载器" Height="500" Width="800" Icon="Assets/favicon.ico">
     <Window.Resources>
         <Converters:SpeedConverter x:Key="SpeedConverter"/>

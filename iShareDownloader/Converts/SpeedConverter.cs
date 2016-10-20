@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Data;
 
-namespace UnityTrainDownloader.Converts
+namespace iShareDownloader.Converts
 {
     public class SpeedConverter : IValueConverter
     {

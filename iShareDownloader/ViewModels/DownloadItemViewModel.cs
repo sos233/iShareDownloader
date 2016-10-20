@@ -6,9 +6,9 @@ using System.Net;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.ComponentModel;
-using UnityTrainDownloader.Utils;
+using iShareDownloader.Utils;
 
-namespace UnityTrainDownloader.ViewModels
+namespace iShareDownloader.ViewModels
 {
     public class DownloadItemViewModel : ViewModelBase
     {

@@ -8,7 +8,7 @@ using System.Text.RegularExpressions;
 using System.Windows.Controls;
 using System.Threading;
 
-namespace UnityTrainDownloader
+namespace iShareDownloader
 {
     public class WebAutoLogin
     {

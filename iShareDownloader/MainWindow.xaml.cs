@@ -1,6 +1,6 @@
 ﻿using System.Windows;
 
-namespace UnityTrainDownloader
+namespace iShareDownloader
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
